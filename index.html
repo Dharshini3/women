@@ -1,35 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Women Safety Survey</title>
-    <link rel="stylesheet" href="style.css">
+
+    <title>WSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+
 </head>
+
 <body>
-    <div class="popup">
-        <h1>Write Down Your Insecurities and Isuues</h1>
-        <form action="">
-            <select name="" id="">
-                <option value="">Complaint</option>
-                <option value="">suggestion</option>
-                <option value="">Feedback</option>
-            </select>
-            <input type="text" placeholder="Enter Your City name">
-        </form>
-    </div>
-    <nav>
-        <h1>WSS</h1>
-        <ul> 
-            <li ><a class="active" href="#">Complaint</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Contact Us</a></li>
-            
-        </ul>
-    </nav>
-    
+    <!-- partial:index.partial.html -->
+    <main>
+
+
+        <div class="lrpopup">
+            <div class="lrpopupinner">
+                <div class="lrpopupcontent">
+
+                    <a href="javascript:void();" class="close_lrpopup"><span class="fa-solid fa-times"></span></a>
+
+                    <div class="lrblockwrap">
+
+
+                        <div class="loginblock lrblock">
+                            <h3>Fill the form</h3>
+                            <p>Share Your Insecurities or issues</p>
+                            <div class="formwrap">
+                                <form method="post" action="#">
+                                    <fieldset>
+                                        <select name="" id="">
+                                            <option value="">Complaint</option>
+                                            <option value="">Suggestion</option>
+                                            <option value="">Feedback</option>
+                                        </select>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input type="text" name="password" placeholder="Enter Location"
+                                            autocomplete="off" required>
+                                    </fieldset>
+                                    <fieldset>
+                                        <textarea name="" id="" cols="30" rows="20"
+                                            placeholder="Type here..."></textarea>
+                                    </fieldset>
+
+                                    <button>
+                                        Send <span class="fa-solid fa-angle-right"></span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!--loginblock-->
+
+
+
+
+                        <!--Registerblock-->
+                    </div>
+                    <!--lrblockwrap-->
+
+
+
+                </div>
+                <!--lrblockwrap-->
+            </div>
+            <!--lrpopupinner-->
+        </div>
+        <!--lrpopup-->
+
+
+
+        <header>
+            <div class="container" style="display: flex; align-items: center; justify-content: space-between; ">
+                <a href="#" class="logo">
+                    WSS
+                </a>
+                <div class="lrbuttons">
+                    <a href="javascript:void();" class="login_btn active">
+                        Complaint
+                    </a>
+                    <a href="javascript:void();" class="register_btn">
+                        Home
+                    </a>
+                    <a href="javascript:void();" class="register_btn">
+                        About Us
+                    </a>
+                    <a href="javascript:void();" class="register_btn">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!--header-->
+
+
+
+
+        <div class="content">
+            <div class="container">
+                <div class="timebox"></div>
+            </div>
+        </div>
+        <!--content-->
+
+
+
+
+        <footer>
+            <div class="container">
+                <div class="copyright">Copyright &copy; <span id="year"></span> <a href="#">BrandName</a></div>
+            </div>
+        </footer>
+        <!--footer-->
+
+    </main>
+    <!-- partial -->
+    <script src="./script.js"></script>
+
 </body>
-<script src="script.js"></script>
+
 </html>
