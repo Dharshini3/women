@@ -30,3 +30,17 @@ $(document).ready(function () {
     $("a.login_btn").removeClass("active");
   });
 });
+
+// var pg = document.getElementsByClassName("rgpg");
+//         console.log(pg)
+//         function rgpg(a){
+//             for (var i = 0; i < pg.length; i++){
+//                 console.log(i)
+//                 if(i == a){
+//                     pg[i].style.display = "block";
+//                 }
+//                 else{
+//                     pg[i].style.display = "none";
+//                 }
+//             }
+//         }
