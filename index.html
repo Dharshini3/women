@@ -2,49 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Women Safety Survey</title>
-    <link rel="stylesheet" href="style.css">
+    <title>WSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="nav-links">
-        <form action="">
-            <select name="" id="">
-                <option value="">Complaint</option>
-                <option value="">suggestion</option>
-                <option value="">Feedback</option>
-            </select>
-            <input type="text" placeholder="Enter Your City name">
-        </form>
-    </div>
-
-    <nav>
-      <h1>WSS</h1>
-      
-        <ul> 
-            <li ><a class="active" href="#">Complaint</a></li>
-            <li><a class="active" href="#">Home</a></li>
-            <li><a class="active" href="#">About Us</a></li>
-            <li><a class="active" href="#">Features</a></li>
-            <li><a class="active" href="#">Contact Us</a></li>
-             
-        </ul>
-        <div class="container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+    <!-- partial:index.partial.html -->
+    <main>
+        <div class="lrpopup">
+            <div class="lrpopupinner">
+                <div class="lrpopupcontent">
+                    <a href="javascript:void();" class="close_lrpopup"><span class="fa-solid fa-times"></span></a>
+                    <div class="lrblockwrap">
+                        <div class="loginblock lrblock">
+                            <h3>Fill the form</h3>
+                            <p>Share Your Insecurities or issues</p>
+                            <div class="formwrap">
+                                <form method="post" action="#">
+                                    <fieldset>
+                                        <select name="" id="">
+                                            <option value="">Complaint</option>
+                                            <option value="">Suggestion</option>
+                                            <option value="">Feedback</option>
+                                        </select>
+                                    </fieldset>
+                                    <fieldset>
+                                        <input type="text" name="password" placeholder="Enter Location"
+                                            autocomplete="off" required>
+                                    </fieldset>
+                                    <fieldset>
+                                        <textarea name="" id="" cols="30" rows="20"
+                                            placeholder="Type here..."></textarea>
+                                    </fieldset>
+                                    <button>
+                                        Send <span class="fa-solid fa-angle-right"></span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <!--loginblock-->
+                        <!--Registerblock-->
+                    </div>
+                    <!--lrblockwrap-->
+                </div>
+                <!--lrblockwrap-->
+            </div>
+            <!--lrpopupinner-->
         </div>
-        
-        
-    </nav>
-   
-<h1 class="section-title text-center">
-    Women's
-    Harassement
-    <span class="color-org-blue">Survey</span>
-</h1>
-
-    
+        <!--lrpopup-->
+        <header>
+            <div class="container" style="display: flex; align-items: center; justify-content: space-between;">
+                <a href="#" class="logo">
+                    WSS
+                </a>
+                <div class="lrbuttons">
+                    <li><a href="javascript:void();" class="login_btn active" style="cursor: pointer;">
+                        Complaint
+                    </a></li>
+                    <li><a href=".rgpg" style="cursor: pointer;">
+                        Home
+                    </a></li>
+                    <li><a href=".rg" style="cursor: pointer;">
+                        About Us
+                    </a></li>
+                    <li><a href=".pg" style="cursor: pointer;">
+                        Contact Us
+                    </a></li>
+                </div>
+            </div>
+        </header>
+        <!--header-->
+        <!-- Home Starts -->
+        <div class="rgpg"> 
+            <div class="container">
+                "The best <b>protection</b>any women can have is <b>courage</b>"
+            </div>
+        </div>
+        <!-- Home ends -->
+        <!-- About Starts -->
+        <div class="rg" style="display: none;">
+            <h3>About Us</h3>
+           <p> WSS is a website developed for women who want to Complaint their insecurities
+            safetly.when the complaint are sent, these complaint are stored as data.this data can be useful to do survey report.
+           </p> 
+        </div>
+        <!-- About Ends -->
+        <!--contact starts-->
+        <div class="pg" style="display: none;">
+            <h3>Contact Us</h3>
+           <p> WSS is a website developed for women who want to Complaint their insecurities
+            safetly.when the complaint are sent, these complaint are stored as data.this data can be useful to do survey report.
+           </p> 
+        </div>
+        <!-- contact Ends -->
+        <!--content-->
+        <footer>
+            <div class="contain" style="display: none;">
+                <div class="copyright">Copyright &copy; <span id="year"></span> <a href="#">BrandName</a></div>
+            </div>
+        </footer>
+        <!--footer-->
+    </main>
+    <!-- partial -->
+    <script src="./script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
